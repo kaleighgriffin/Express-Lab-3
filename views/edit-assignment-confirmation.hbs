@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <title>Assignment Updated</title>
+</head>
+<body>
+    <h1>Assignment Updated</h1>
+    <p>This assignment was updated.</p>
+    <p><label>Name: </label> {{assignment.name}}</p>
+    <p><label>Score: </label> {{assignment.score}}</p>
+    <p><label>Total: </label> {{assignment.total}}</p>
+    <p><label>Completed: </label> {{#if assignment.completed}} Yes {{else}} No{{/if}}</p>
+    <p>
+        <a href="/">See All Assignments</a>
+    </p>
+</body>
+</html>

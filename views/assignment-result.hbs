@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Assignment Results</title>
+</head>
+<body>
+    <h1>Assignment Added</h1>
+    <p>This assignment was added:</p>
+    {{#with assignment}}
+    <p>Name: {{ name }}</p>
+    <p>Score: {{ score }}</p>
+    <p>Total: {{ total }}</p>
+    <p>Completed: {{#if completed}} Yes {{else}} No{{/if}}</p>
+    {{/with}}
+    <p>
+        <a href="/">See All Assignments</a>
+    </p>
+</body>
+</html>

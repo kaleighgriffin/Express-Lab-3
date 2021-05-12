@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Assignments</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Assingment</th>
+                <th>Score</th>
+                <th>Total</th>
+                <th>Completed</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {{#each assignments}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{score}}</td>
+                <td>{{total}}</td>
+                <td>{{completed}}</td>
+                <td>
+                    <a href="/{{id}}/edit">Edit</a>
+                    <a href="/{{id}}/delete">Delete</a>
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+    <p>Overall Average: {{ average }}%</p>
+    <p>
+		<a href="/add">Add an Assingment</a>
+	</p>
+</body>
+</html>

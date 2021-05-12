@@ -1,0 +1,39 @@
+body {
+    background-color: lightcyan;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+a {
+    text-decoration: none;
+    color:darkslategrey;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 0;
+    font-size: 15px;
+}
+
+button {
+    background-color: darkslategrey;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+th, tr {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 5px;
+}
+
+th {
+    border-bottom: 1px solid black;
+}
+
+table {
+    margin: 0 auto;
+}

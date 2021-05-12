@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Assignment Form</title>
+</head>
+<body>
+    <h1>Add an Assignment</h1>
+    <form method="post">
+        <p>
+            <label for="name">Assignment Name:</label>
+            <input id="name" name="name" />
+        </p>
+        <p>
+            <label for="score">Your Score:</label>
+            <input id="score" name="score" />
+        </p>
+        <p>
+            <label for="total">Total Possible Score:</label>
+            <input id="total" name="total" />
+        </p>
+        <p>
+            <input type="checkbox" id="completed" name="completed" value="completed">
+            <label for="completed">Have you completed the assignment?</label>
+        </p>
+        <p>
+            <button type="submit">Add</button>
+            <a href="/">Never Mind</a>
+        </p>
+    </form>
+</body>
+</html>
